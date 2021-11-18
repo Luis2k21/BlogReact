@@ -1,0 +1,32 @@
+.border{
+    border-radius: 3%;
+    color: black;
+}
+
+.container-imagem {
+    position: relative;
+
+}
+
+.container {
+    position: relative;
+  }
+  
+  #image {
+    position: absolute;
+  }
+  
+  #texto {
+    position: absolute;
+    font-size: 32px;
+    left: 210px;
+    top: 380px;
+  }
+
+  #Botao {
+    position: absolute;
+    
+    left: 320px;
+    top: 550px;
+  }
+    
