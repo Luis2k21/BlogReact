@@ -11,15 +11,15 @@ import { toast } from 'react-toastify'
 
 function Login() {
 
-    const dispatch = useDispatch();
     let history = useHistory();
+    const dispatch = useDispatch();
     const [token, setToken] = useState(''); //ele vai gravar o token que está vindo da API no nosso localStorage
     
     const [userLogin, setUserLogin] = useState<UserLogin>({
         id: 0,
-        usuario: "",
-        senha: "",
-        token: "",
+        usuario: '',
+        senha: '',
+        token: '',
     })
 
     function updatedModel(e: ChangeEvent<HTMLInputElement>) { //ele vai pegar as informações do meu usuario, vai jogar pra função updatedModel e depois vai joga-la para dentro do meu setUserLogin, lembrando que o updatedModel pega essas informações do textField
@@ -30,9 +30,9 @@ function Login() {
     }
 
     useEffect(() => {   //responsavel por fazer o controle de um ciclo de vida de um componente
-        if(token != ""){
+        if(token != ''){
             dispatch(addToken(token))
-            history.push("/home")
+            history.push('/home')
         }
     }, [token]) 
 
